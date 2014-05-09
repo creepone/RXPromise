@@ -645,6 +645,13 @@ typedef RXPromise* (^then_on_main_block_t)(promise_completionHandler_t, promise_
  */
 - (instancetype)init;
 
+/*!
+ @brief Returns a new promise with the specified result.
+ 
+ Designated Initializer
+ */
+- (instancetype)initWithResult:(id)result;
+
 
 /*!
  @brief Fulfilles the promise with specified value.
